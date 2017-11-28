@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <title>Testing Environment</title>
+    <body>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+    </body>
+
+    <script>
+        d3.select('body')
+            .append('svg')
+        const svgRef = d3.select("svg")
+            .attr("width", 500)
+            .attr("height", 100);
+
+        svgRef.append('circle')
+            .attr("fill", "red")
+            .attr("stroke", "green")
+            .attr("r", 40)
+            .attr('transform', 'translate(50,50)')
+    </script>
+</html>
